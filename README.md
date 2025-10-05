@@ -20,7 +20,7 @@ By running the following scripts with the provided checkpoints, you should be ab
     
     $ python reproduction.py --dataset name
 
-To facilitate reproducibility, we provide an recording of the experiment execution process in **Run Process**. This video demonstrates the procedure to run the code and reproduce the reported results.
+To facilitate reproducibility, we provide an recording of the experiment execution process in **Run process**. This video demonstrates the procedure to run the code and reproduce the reported results.
 
 ## 📖 Citation
     
