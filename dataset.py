@@ -105,7 +105,7 @@ class Dataset:
             graph.ndata['label'] = graph.ndata['label'].long().squeeze(-1)
             graph.ndata['feature'] = graph.ndata['feature'].float()
         
-        Lap = sp.load_npz('/home/guoguoai/code/RHO/Lap_matrix_{}.npz'.format(name))
+        Lap = sp.load_npz('./datasets/Lap_matrix_{}.npz'.format(name))
         Lap = sparse_mx_to_torch_sparse_tensor(Lap)
      
         
