@@ -1,5 +1,8 @@
 # RHO
 Official PyTorch implementation of ''Semi-supervised Graph Anomaly Detection via Robust Homophily Learning'' <br>
+# Overview
+RHO consists of three main components: (1) Adaptive frequency response (AdaFreq) filters for heterogeneous normal pattern learning, which is simultaneously applies on both cross-channel and channel-wise view; (2) Graph normality alignment (GNA) for aligning the learned normality from two views using a contrastive learning objective; and(3) the model is lastly optimized with a widely-used one-class objective, along with a contrastive loss in GNA, to learn robust homophily patterns on GAD datasets with diverse levels of homophily.
+
 # Environment Settings
 This implementation is based on Python3. To run the code, you need the following dependencies: <br>
 * torch==2.0.0+cu117
