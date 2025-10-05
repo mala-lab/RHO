@@ -17,6 +17,7 @@ You can download the datasets from (https://drive.google.com/drive/folders/1x0cE
     $ sh run.sh
     
 By running the following scripts with the provided checkpoints, you should be able to reproduce the results reported in Table 1 of our paper. <br>
+    
     $ sh reproduction.py --dataset name
 
 ## 📖 Citation
