@@ -84,7 +84,7 @@ if __name__ == '__main__':
     net.apply(init_params)
     optimizer = torch.optim.Adam(net.parameters(), lr=args.lr, weight_decay=args.weight_decay)
 
-    net.load_state_dict(torch.load('checkpoint/{}_test'.format(args.dataset)))
+    net.load_state_dict(torch.load('checkpoint/{}_1'.format(args.dataset)))
     net.eval()
     outputs_global, outputs_local, nce_loss = net(Lap,features)
     center_local, center_global = init_center_c(Lap, features, net, device, eps=0.1)
@@ -100,7 +100,7 @@ if __name__ == '__main__':
     
     # 计算 AUROC
     auroc = roc_auc_score(labels[idx_test], scores)
-    print(" Test set  AUROC: {:.4f}".format(100. * auroc))
+    print(" Test set  AUROC: {:.4f}".format(auroc))
     auprc = auc(recall, precision)
-    print(" Test set  AUPRC: {:.4f}".format(100. * auprc))
+    print(" Test set  AUPRC: {:.4f}".format(auprc))
 
