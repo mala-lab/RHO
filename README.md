@@ -12,10 +12,11 @@ This implementation is based on Python3. To run the code, you need the following
 * scikit-learn==1.2.2
 # Datasets
 You can download the datasets from (https://drive.google.com/drive/folders/1x0cEGRCGtPGGbKY9S1x4rvDqJrxlLB27?dmr=1&ec=wgc-drive-hero-goto)
+
 # Run experiments:
     $ sh run.sh
     
-By running the following scripts with the provided checkpoints, you should be able to reproduce the results reported in Table 1 of our paper.
+By running the following scripts with the provided checkpoints, you should be able to reproduce the results reported in Table 1 of our paper. <br>
     $ sh reproduction.py --dataset name
 
 ## 📖 Citation
