@@ -16,7 +16,7 @@ This implementation is based on Python3. To run the code, you need the following
 * seaborn==0.12.2
 * scikit-learn==1.2.2
 # Datasets
-You can download the datasets from (https://drive.google.com/drive/folders/1x0cEGRCGtPGGbKY9S1x4rvDqJrxlLB27?dmr=1&ec=wgc-drive-hero-goto)
+For convenience, some datasets can be obtained from [google drive link](https://drive.google.com/drive/folders/1x0cEGRCGtPGGbKY9S1x4rvDqJrxlLB27?dmr=1&ec=wgc-drive-hero-goto) . We sincerely thank the researchers for providing these datasets. Due to the Copyright of DGraph-Fin, you need to download from [DGraph-Fin](https://dgraph.xinye.com/introduction).
 
 # Run experiments:
     $ sh run.sh
