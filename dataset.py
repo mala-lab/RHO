@@ -13,7 +13,7 @@ import pickle
 
 def load_mat(dataset):
     """Load .mat dataset."""
-    data = sio.loadmat("/home/guoguoai/code/data/{}.mat".format(dataset))
+    data = sio.loadmat("./datasets/{}.mat".format(dataset))
     label = data['Label'] if ('Label' in data) else data['gnd']
     attr = data['Attributes'] if ('Attributes' in data) else data['X']
     network = data['Network'] if ('Network' in data) else data['A']
@@ -43,12 +43,12 @@ class Dataset:
         self.name = name
         graph = None
         if name == 'tfinance':
-            graph, label_dict = load_graphs('/home/guoguoai/code/data/tfinance')
+            graph, label_dict = load_graphs('./datasets/tfinance')
             graph = graph[0]
             graph.ndata['label'] = graph.ndata['label'].argmax(1)
 
             if anomaly_std:
-                graph, label_dict = load_graphs('/home/guoguoai/code/data/tfinance')
+                graph, label_dict = load_graphs('./datasets/tfinance')
                 graph = graph[0]
                 feat = graph.ndata['feature'].numpy()
                 anomaly_id = graph.ndata['label'][:,1].nonzero().squeeze(1)
@@ -58,7 +58,7 @@ class Dataset:
                 graph.ndata['label'] = graph.ndata['label'].argmax(1)
 
             if anomaly_alpha:
-                graph, label_dict = load_graphs('/home/guoguoai/code/data/tfinance')
+                graph, label_dict = load_graphs('./datasets/tfinance')
                 graph = graph[0]
                 feat = graph.ndata['feature'].numpy()
                 anomaly_id = list(graph.ndata['label'][:, 1].nonzero().squeeze(1))
