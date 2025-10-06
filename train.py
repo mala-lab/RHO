@@ -98,7 +98,7 @@ def main_worker(args):
     in_feats = graph.ndata['feature'].shape[1]
 
     num_node = features.shape[0]
-    idx_train, idx_val, idx_test = get_split(num_node, labels)
+    idx_train, idx_val, idx_test = get_split(num_node, labels, args.train_ratio)
 
     net = RHO(in_feats, args.hidden1, args.hidden2, args.nlayers, args.batch_size, args.tau).to(device) 
     #graph = graph.to(device)
