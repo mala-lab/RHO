@@ -63,7 +63,7 @@ def main_worker(args):
         dist_local = torch.sum((outputs_local[idx_train] - center_local) ** 2, dim=1) 
         dist = 0.5*dist_global + 0.5*dist_local
 
-        loss =  args.alpha * torch.mean(dist) + args.beta * nce_loss
+        loss =  torch.mean(dist) + args.alpha * nce_loss
         loss.backward()
         optimizer.step()
         time_epoch = time.time()-t_st  # each epoch train times
@@ -133,12 +133,12 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--seed', type=int, default=42)
     parser.add_argument('--cuda', type=int, default=0)
-    parser.add_argument('--dataset', type=str, default='amazon',
+    parser.add_argument('--dataset', type=str, default='elliptic',
                         choices=['amazon', 'tfinance','reddit','photo','elliptic','tolokers','questions'])
-    parser.add_argument('--epochs', type=int, default=200)
-    parser.add_argument('--lr', type=float, default=0.005)
+    parser.add_argument('--epochs', type=int, default=100)
+    parser.add_argument('--lr', type=float, default=0.0005)
     parser.add_argument('--weight_decay', type=float, default=5e-5)
-    parser.add_argument("--train_ratio", type=float, default=0.15, help="Training ratio")
+    parser.add_argument("--train_ratio", type=float, default=0.3, help="Training ratio")
     parser.add_argument("--val_ratio", type=float, default=0.1, help="Val ratio")
     parser.add_argument('--nlayers', type=int, default=2)
     parser.add_argument('--early_stopping', type=int, default=200)
@@ -146,8 +146,6 @@ if __name__ == '__main__':
     parser.add_argument('--hidden2', type=int, default=64)
     parser.add_argument('--batch_size', type=int, default=0)
     parser.add_argument('--alpha', type=float, default=1.0)
-    parser.add_argument('--beta', type=float, default=1.0)
-    parser.add_argument('--gama', type=float, default=1.0)
     parser.add_argument('--tau', type=float, default=0.2)
 
     args = parser.parse_args()
