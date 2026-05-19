@@ -8,6 +8,8 @@
 ![](https://img.shields.io/github/stars/mala-lab/RHO?color=yellow)
 ![](https://img.shields.io/github/forks/mala-lab/RHO?color=lightblue)
 ![](https://img.shields.io/badge/PRs-Welcome-green)
+</div>
+
 
 # Overview
 In this work, we propose RHO, the very first GAD approach designed to learn heterogeneous normal patterns on a set of labeled normal nodes. RHO is implemented by two novel modules, AdaFreq and GNA. AdaFreq learns a set of adaptive spectral filters in both the cross-channel and channel-wise view of node attribute to capture the heterogeneous normal patterns from the given limited labeled normal nodes, while GNA is designed to to enforce the consistency of the learned normal patterns, thereby facilitating the learning of robust normal representations on datasets with different levels of homophily in the normal nodes. 
