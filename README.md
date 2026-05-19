@@ -25,18 +25,20 @@ By running the following scripts with the provided checkpoints, you should be ab
     
     $ python reproduction.py --dataset name
 
-To facilitate reproducibility, we provide an recording of the experiment execution process in **Run process**. This video demonstrates the procedure to run the code and reproduce the reported results.
+To facilitate reproducibility, we provide a recording of the experiment execution process in **Run process**. This video demonstrates the procedure to run the code and reproduce the reported results.
 
 ## 📖 Citation
     
 If you find this work useful, please cite our paper:
 
 ```bibtex
-@inproceedings{ai2025RHO,
-  title     = {Semi-supervised Graph Anomaly Detection via Robust Homophily Learning},
-  author    = {Ai, Guoguo and Qiao, Hezhe and Yan, Hui and Pang, Guansong},
-  booktitle = {Proceedings of the Thirty-ninth Annual Conference on Neural Information Processing Systems (NeurIPS)},
-  year      = {2025}
+@article{ai2026semi,
+  title={Semi-supervised Graph Anomaly Detection via Robust Homophily Learning},
+  author={Ai, Guoguo and Qiao, Hezhe and Yan, Hui and Pang, Guansong},
+  journal={Advances in Neural Information Processing Systems},
+  volume={38},
+  pages={133988--134013},
+  year={2026}
 }
 
 
