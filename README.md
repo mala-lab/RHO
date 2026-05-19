@@ -1,5 +1,14 @@
-# RHO
-Official PyTorch implementation of ''Semi-supervised Graph Anomaly Detection via Robust Homophily Learning'' <br>
+<div align="center">
+  <h2><b> Semi-supervised Graph Anomaly Detection via Robust Homophily Learning </b></h2>
+</div>
+
+<div align="center">
+
+![](https://img.shields.io/github/last-commit/mala-lab/RHO?color=green)
+![](https://img.shields.io/github/stars/mala-lab/RHO?color=yellow)
+![](https://img.shields.io/github/forks/mala-lab/RHO?color=lightblue)
+![](https://img.shields.io/badge/PRs-Welcome-green)
+
 # Overview
 In this work, we propose RHO, the very first GAD approach designed to learn heterogeneous normal patterns on a set of labeled normal nodes. RHO is implemented by two novel modules, AdaFreq and GNA. AdaFreq learns a set of adaptive spectral filters in both the cross-channel and channel-wise view of node attribute to capture the heterogeneous normal patterns from the given limited labeled normal nodes, while GNA is designed to to enforce the consistency of the learned normal patterns, thereby facilitating the learning of robust normal representations on datasets with different levels of homophily in the normal nodes. 
 
