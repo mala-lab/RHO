@@ -8,6 +8,7 @@
 ![](https://img.shields.io/github/stars/mala-lab/RHO?color=yellow)
 ![](https://img.shields.io/github/forks/mala-lab/RHO?color=lightblue)
 ![](https://img.shields.io/badge/PRs-Welcome-green)
+[![arXiv](https://img.shields.io/badge/arXiv-2506.15448-b31b1b)](https://arxiv.org/abs/2506.15448)
 </div>
 
 
