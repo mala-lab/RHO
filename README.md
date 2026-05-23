@@ -50,7 +50,7 @@ If you find this work useful, please cite our paper:
   journal={Advances in Neural Information Processing Systems},
   volume={38},
   pages={133988--134013},
-  year={2026}
+  year={2025}
 }
 
 
